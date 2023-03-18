@@ -1,0 +1,23 @@
+<!-- <div class="card" style="width: 18rem;" *ngFor="let heroe of dataMarvel">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{heroe.superhero}}</h5>
+    <p class="card-text">{{heroe.publisher}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> -->
+
+<div class="card-deck">
+  <div class="col-4 mt-1 mb-1" *ngFor="let heroe of dataMarvel">
+    <div class="card">
+      <img src="{{heroe.image_path}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{heroe.superhero}}</h5>
+        <p class="card-text">{{heroe.alter_ego}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{heroe.publisher}}</small>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{dataAbout.siteName}}</h1>
+    <ul>
+      <li *ngFor="let trademark of dataAbout.trademarks">&copy;{{trademark}}</li>
+    </ul>
+    <p class="lead">Son marcas registradas, todos los derechos reservados.</p>
+    <p class="lead">Tecnolog&iacute;as utilizadas para FrontEnd</p>
+    <ul>
+      <li *ngFor="let frontElement of dataAbout.frontEnd">{{frontElement}}</li>
+    </ul>
+    <p class="lead">Tecnolog&iacute;as utilizadas para BackEnd</p>
+    <ul>
+      <li *ngFor="let backElement of dataAbout.backEnd">{{backElement}}</li>
+    </ul>
+    <br>
+    <p class="lead"><b>Información del desarrollador</b></p>
+    <p class="lead"><b>Nombre:</b> {{dataAbout.developedBy}}</p>
+    <p class="lead"><b>Matrícula:</b> {{dataAbout.studentFolio}}</p>
+    <p class="lead"><b>Materia:</b> {{dataAbout.subject}}</p>
+    <p class="lead"><b>Programa de estudios:</b> {{dataAbout.programStudy}}</p>
+  </div>
+</div>
